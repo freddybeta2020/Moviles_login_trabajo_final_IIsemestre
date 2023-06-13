@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Viaje a Cartagena" />
+
+
+
+        <EditText
+            android:id="@+id/etcantidad"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="Digite cantidad personas"
+            android:ems="10"
+            android:inputType="number" />
+
+
+
+    <TextView
+        android:id="@+id/tvvalorpersona"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Valor por usuario 1400000" />
+
+
+    <TextView
+        android:id="@+id/tvmensaje"
+        android:layout_width="162dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:hint="Porcentaje IVA"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/rbiva0"
+                android:layout_width="82dp"
+                android:layout_height="50dp"
+                android:text=" 0%"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rbiva19"
+                android:layout_width="102dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:checked="true"
+                android:text=" 19%"
+                android:textSize="20dp" />
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvmensaje1"
+        android:layout_width="162dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:hint="Descuento"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/rbdecuento"
+                android:layout_width="82dp"
+                android:layout_height="50dp"
+                android:text=" 10 %"
+                android:textSize="20dp" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/tvsubtotal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="Subtotal" />
+
+    <TextView
+        android:id="@+id/tviva"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="IVA" />
+
+    <TextView
+        android:id="@+id/tvtotal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Total" />
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btcalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:onClick="Calcular"
+            android:textSize="25dp"
+            android:text="Calcular" />
+
+        <Button
+            android:id="@+id/btlimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:onClick="Limpiar"
+            android:layout_marginLeft="5dp"
+            android:textSize="25dp"
+            android:text="Limpiar" />
+    </LinearLayout>
+</LinearLayout>

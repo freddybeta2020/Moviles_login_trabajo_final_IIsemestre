@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="40dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Agencia de viajes" />
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Inicie Sesion" />
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="180dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etusuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="Usuario" />
+
+        <EditText
+            android:id="@+id/etcontraseña"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="Contraseña" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btlogin"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:onClick="Login"
+            android:text="Login "
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
