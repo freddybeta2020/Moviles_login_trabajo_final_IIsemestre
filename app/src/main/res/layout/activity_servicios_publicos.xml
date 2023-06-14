@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Servicios_publicos">
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Servicios Publicos" />
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/etagua"
+            android:layout_width="370dp"
+            android:layout_height="55dp"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Metros cubicos agua"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etvaloragua"
+            android:layout_width="370dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:hint="Valor metro cubico agua"
+            android:inputType="number"
+            android:textSize="30dp" />
+
+
+
+
+        <EditText
+            android:id="@+id/etenergia"
+            android:layout_width="370dp"
+            android:layout_height="55dp"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:hint="Cantidad kilovatios"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etvalorkilovatio"
+            android:layout_width="370dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Valor kilovatio"
+            android:inputType="number"
+            android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/etestracto"
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="Estracto vivienda"
+        android:inputType="number"
+        android:textSize="30dp" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/tvsubtotal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:hint="Subtotal Agua Y Energia" />
+
+    <TextView
+        android:id="@+id/tvdescuento"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Descuento" />
+
+    <TextView
+        android:id="@+id/tvtpagar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Total a Pagar" />
+
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btcalcular"
+            android:layout_width="10dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:onClick="Calcular"
+            android:text="Calcular"
+            android:textSize="27dp" />
+
+        <Button
+            android:id="@+id/btlimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="Limpiar"
+            android:text="Limpiar"
+            android:textSize="27dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+
+        <Button
+            android:id="@+id/btregresar"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:onClick="Regresar"
+            android:layout_marginLeft="5dp"
+            android:textSize="25dp"
+            android:text="Regresar" />
+    </LinearLayout>
+
+</LinearLayout>
