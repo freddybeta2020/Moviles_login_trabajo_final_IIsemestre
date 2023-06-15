@@ -38,7 +38,7 @@ public class Actividad1 extends AppCompatActivity {
     public void Calcular(View view){
         //Pasar la informacion de los objetos a variables
         cantidad1 = cantidad.getText().toString();
-        if (cantidad1.isEmpty()){
+        if (cantidad1.isEmpty() || cantidad1.equals("0")){
             Toast.makeText(this, "La cantidad es requerida", Toast.LENGTH_SHORT).show();
             cantidad.requestFocus();
         }else{
@@ -58,10 +58,10 @@ public class Actividad1 extends AppCompatActivity {
             ClsCalculos Ob_calculos = new ClsCalculos(usuario1, can_tidad,descuento1,iva1 );
             //Operaciones
             //Imprimir resultados
-            descuentotv.setText((int) Ob_calculos.Calcular_valor_descuento(usuario1,can_tidad,descuento1));
-            subtotal.setText((int) Ob_calculos.Calcular_valor_bruto(usuario1,can_tidad));
-            iva.setText((int) Ob_calculos.Calcular_valor_iva(usuario1,can_tidad,descuento1,iva1));
-            total.setText((int) Ob_calculos.Calcular_valor_neto(usuario1,descuento1,can_tidad,iva1));
+            descuentotv.setText((int) Ob_calculos.Calcular_valor_descuento());
+            subtotal.setText((int) Ob_calculos.Calcular_valor_bruto());
+            iva.setText((int) Ob_calculos.Calcular_valor_iva());
+            total.setText((int) Ob_calculos.Calcular_valor_neto());
         }
     }
 }

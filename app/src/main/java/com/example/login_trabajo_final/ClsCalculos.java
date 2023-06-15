@@ -12,20 +12,20 @@ public class ClsCalculos {
     int cantidad_personas;
     double descuento,iva;
 
-    public double Calcular_valor_bruto(double usuario, int cantidad_personas){
+    public double Calcular_valor_bruto(){
         return usuario * cantidad_personas;
     }
 
-    public double Calcular_valor_descuento(double usuario,int cantidad_personas, double descuento){
+    public double Calcular_valor_descuento(){
         return ((usuario*cantidad_personas)*descuento)/100;
     }
 
-    public double Calcular_valor_iva(double usuario,int cantidad_personas, double descuento, double iva){
+    public double Calcular_valor_iva(){
 
         return (((usuario * cantidad_personas)-descuento)*iva)/100;
     }
 
-    public double Calcular_valor_neto(double usuario,double descuento,int cantidad_personas,  double iva){
+    public double Calcular_valor_neto(){
         double subtotal = usuario * cantidad_personas;
         double descuento1 = subtotal - descuento;
         double iva1 = (subtotal - descuento1)*iva/100;
